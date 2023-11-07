@@ -26,3 +26,9 @@ test code from other exercises.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer
+
+First, the dist matrix is initialized, which takes $|V|^2$ time.  Then, the algorithm does some more initializing by running through every vertex and edge, which takes $|V| + |E|$ time.  Finally, it runs through the triple-nested for loops, which take $|V|^3$ time.  Together, this algorithm has a time complexity of $|V|^2 + |V| + |E| + |V|^3$, which simplifies to $|V|^3 + |E|$.
+
+
